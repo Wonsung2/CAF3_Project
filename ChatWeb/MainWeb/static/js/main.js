@@ -26,27 +26,15 @@
         autoPlay: false,
         slideSpeed: 2000,
         pagination: false,
-        nav: true,
+        navigation: true,
         items: 4,
-        margin:30,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            992: {
-                items: 3
-            },
-            1200: {
-                items: 3
-            }
-        }
+        /* transitionStyle : "fade", */
+        /* [This code for animation ] */
+        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [980, 2],
+        itemsTablet: [767, 1],
+        itemsMobile: [479, 1],
     });
     
     
@@ -57,26 +45,15 @@
         autoPlay: false,
         slideSpeed: 2000,
         pagination: false,
-        nav: true,
+        navigation: true,
         items: 3,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 1
-            },
-            768: {
-                items: 1
-            },
-            992: {
-                items: 2
-            },
-            1200: {
-                items: 3
-            }
-        }
+        /* transitionStyle : "fade", */
+        /* [This code for animation ] */
+        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [980, 2],
+        itemsTablet: [767, 1],
+        itemsMobile: [479, 1],
     });
     
     
@@ -87,11 +64,15 @@
         autoPlay: false,
         slideSpeed: 2000,
         pagination: false,
-        nav: true,
+        navigation: true,
         items: 1,
         /* transitionStyle : "fade", */
         /* [This code for animation ] */
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        itemsDesktop: [1199, 1],
+        itemsDesktopSmall: [980, 1],
+        itemsTablet: [767, 1],
+        itemsMobile: [479, 1],
     });
     
     
@@ -102,28 +83,15 @@
         autoPlay: false,
         slideSpeed: 2000,
         pagination: false,
-        nav: true,
+        navigation: true,
         items: 3,
         /* transitionStyle : "fade", */
         /* [This code for animation ] */
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 1
-            },
-            768: {
-                items: 1
-            },
-            992: {
-                items: 2
-            },
-            1200: {
-                items: 3
-            }
-        }
+        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [980, 2],
+        itemsTablet: [767, 1],
+        itemsMobile: [479, 1],
     });
     
     
@@ -134,27 +102,15 @@
         autoPlay: false,
         slideSpeed: 2000,
         pagination: false,
-        nav: true,
+        navigation: true,
         items: 3,
-        margin: 30,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 1
-            },
-            768: {
-                items: 2
-            },
-            992: {
-                items: 3
-            },
-            1200: {
-                items: 3
-            }
-        }
+        /* transitionStyle : "fade", */
+        /* [This code for animation ] */
+        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [980, 2],
+        itemsTablet: [767, 1],
+        itemsMobile: [479, 1],
     });
     
     
@@ -165,26 +121,15 @@
         autoPlay: false,
         slideSpeed: 2000,
         pagination: false,
-        nav: true,
+        navigation: true,
         items: 4,
-        navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
-        responsive: {
-            0: {
-                items: 1
-            },
-            576: {
-                items: 1
-            },
-            768: {
-                items: 1
-            },
-            992: {
-                items: 2
-            },
-            1200: {
-                items: 4
-            }
-        }
+        /* transitionStyle : "fade", */
+        /* [This code for animation ] */
+        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+        itemsDesktop: [1199, 4],
+        itemsDesktopSmall: [980, 2],
+        itemsTablet: [767, 1],
+        itemsMobile: [479, 1],
     });
     
     
@@ -194,9 +139,15 @@
     $('.slider-active6').owlCarousel({
         autoPlay: false,
         slideSpeed: 2000,
-        dots: true,
-        nav: false,
+        pagination: true,
+        navigation: false,
         items: 1,
+        /* transitionStyle : "fade", */
+        /* [This code for animation ] */
+        itemsDesktop: [1199, 1],
+        itemsDesktopSmall: [980, 1],
+        itemsTablet: [767, 1],
+        itemsMobile: [479, 1],
     });
     
     

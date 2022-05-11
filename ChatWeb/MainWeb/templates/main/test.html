@@ -56,7 +56,7 @@
         
 		<!-- modernizr JS
 		============================================ -->		
-        <script src="js/vendor/modernizr-3.11.7.min.js' %}"></script>
+        <script src="{% static 'js/vendor/modernizr-3.11.7.min.js' %}"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -64,7 +64,7 @@
         <![endif]-->
         <!-- Add your site or application content here -->
         <div class="wrapper">
-            <div class="comming-soon-area bg-img height-100vh-2 d-flex align-items-center overlay" style="background-image: url(img/banner/coffee.jpg);">
+            <div class="comming-soon-area bg-img height-100vh-2 d-flex align-items-center overlay" style="background-image: url('img/banner/banner.jpg');">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-10 col-lg-offset-1 col-md-12">
@@ -72,7 +72,7 @@
                                 <div class="comming-soon-top">
                                     <div class="logo">
                                         <a href="index.html">
-                                            <img src="img/logo/logo2.png" alt="">
+                                            <img src="{% static 'img/logo/logo2.png' %}" alt="">
                                         </a>
                                     </div>
                                     <h3>We are coming verry soon...</h3>
