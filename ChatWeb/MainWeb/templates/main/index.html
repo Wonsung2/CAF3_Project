@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -41,7 +43,10 @@
             document.getElementById("chatbox").innerHTML += bottext;
 
             var moi = document.getElementById("chatbox");
-            moi.scrollTop = document.getElementById("chatbox").scrollHeight;
+            moi.scrollTop = moi.scrollHeight;
+
+            document.getElementById("chattext").value = "";
+            document.getElementById("chattext").focus();
 
             var strurl = "chatanswer?ctext=" + ctext;
             alert(strurl);
@@ -56,17 +61,15 @@
                     alert(obj.answer);
 
                 }
-            };
+            }
             xhr.open("GET", strurl);
             xhr.setRequestHeader("X-CSRFToken", csrftoken);
             xht.send(null);
 
 
-        }
+        };
 
     </script>
-
-
 
     {% block styles %}
     <style>
@@ -91,6 +94,23 @@
             text-align: center;
         }
 
+        .all-contact-text .di-na input[type="email"] {
+            background-color: #fff;
+            border: inherit;
+            border-radius: 0px;
+            -webkit-box-shadow: inherit;
+            box-shadow: inherit;
+            height: 44px;
+            outline: medium none;
+            padding: 0 13px;
+            -webkit-transition: all 0.4s ease 0s;
+            transition: all 0.4s ease 0s;
+            width: 100%;
+            color: #333;
+            font-size: 13px;
+        }
+
+
     </style>
 
     {% endblock %}
@@ -101,7 +121,7 @@
             <table width="100%">
                 <tr>
                     <td width="50%"; align="center;" >
-                         coffee chat
+                        <button style="border: solid 0px;"> coffee chat </button>
                     </td>
 
                 </tr>
@@ -114,7 +134,7 @@
             <table width="100%">
                 <tr>
                     <td width="85%"; align="left;">
-                         <input type="text" id="text" style="padding: 10px 0; width: 100%; border: solid 0px #000;">
+                        <input type="text" name="textbox" class="email" placeholder="내용을 입력해주세요" id="text" required>
                     </td>
                     <td width="15%"; align="right;">
                          <button style="padding: 10px 0; width: 100%; background-color: #157347 ;color: black; border: solid 0px" onclick="send()"> Send </button>

@@ -1,18 +1,384 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cca95ef5-bd91-4285-aff4-095d8abb9d14" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="cca95ef5-bd91-4285-aff4-095d8abb9d14" name="Changes" comment="delete">
+      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/css/owl.carousel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/css/owl.theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/css/owl.transitions.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Project_No2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Project_No2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatWeb/ChatWeb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/ChatWeb/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/ChatWeb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/ChatWeb/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/ChatWeb/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/ChatWeb/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/css/bar_chart.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/css/bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/css/meanmenu.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/css/meanmenu.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/css/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/css/pie_chart.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/WW.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/banner/POS5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/banner/coffee.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/bg-img/candidates.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/bg-img/elect.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/L1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/L2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/L3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/L4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/LEE1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/LEE2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/LEE3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/S1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/S2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/S3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/S4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/SIM1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/SIM2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/SN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/Y1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/Y2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/Y3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/Y4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/YUN1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/YUN2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/YUN3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/event/YUN4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/logo/whovologo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/slider/Sim.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/slider/Yun.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/slider/leeJM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/time-line/0309.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/time-line/1st.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/time-line/2nd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/time-line/3rd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/time-line/early.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/time-line/regis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/www.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/intent.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/js/bar_chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/js/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/js/bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/js/pie-chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/js/plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/js/plugins.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/css/autocomplete.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/css/changelists.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/css/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/css/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/css/forms.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/css/login.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/css/nav_sidebar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/css/responsive_rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/css/rtl.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/css/vendor/select2/LICENSE-SELECT2.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/css/vendor/select2/select2.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/css/vendor/select2/select2.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/css/widgets.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/fonts/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/fonts/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/fonts/Roboto-Bold-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/fonts/Roboto-Light-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/fonts/Roboto-Regular-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/calendar-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/gis/move_vertex_off.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/gis/move_vertex_on.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/icon-addlink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/icon-alert.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/icon-calendar.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/icon-changelink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/icon-clock.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/icon-deletelink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/icon-no.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/icon-unknown-alt.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/icon-unknown.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/icon-viewlink.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/icon-yes.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/inline-delete.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/selector-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/sorting-icons.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/tooltag-add.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/img/tooltag-arrowright.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/SelectBox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/SelectFilter2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/admin/DateTimeShortcuts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/admin/RelatedObjectLookups.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/autocomplete.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/cancel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/change_form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/inlines.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/jquery.init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/nav_sidebar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/popup_response.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/prepopulate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/prepopulate_init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/urlify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/jquery/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/jquery/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/jquery/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/af.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/ar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/az.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/bg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/bn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/bs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/ca.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/cs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/da.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/de.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/dsb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/el.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/en.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/es.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/et.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/eu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/fa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/fi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/fr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/he.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/hi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/hr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/hsb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/hu.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/hy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/id.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/is.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/it.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/ja.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/ka.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/km.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/ko.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/lt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/lv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/mk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/ms.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/nb.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/ne.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/nl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/pl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/ps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/pt-BR.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/pt.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/ro.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/ru.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/sk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/sl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/sq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/sr-Cyrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/sr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/sv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/th.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/tk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/tr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/uk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/vi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/zh-CN.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/i18n/zh-TW.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/select2.full.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/select2/select2.full.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/xregexp/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/xregexp/xregexp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/admin/js/vendor/xregexp/xregexp.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/css/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/css/bar_chart.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/css/chosen.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/css/font-awesome.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/css/fullcalendar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/css/magnific-popup.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/css/meanmenu.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/css/normalize.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/css/owl.carousel.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/css/pie_chart.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/css/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/css/timer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/css/venobox.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/fonts/FontAwesome.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/fonts/fontawesome-webfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/fonts/fontawesome-webfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/fonts/glyphicons-halflings-regular.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/fonts/glyphicons-halflings-regular.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/fonts/glyphicons-halflings-regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/fonts/glyphicons-halflings-regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/fonts/glyphicons-halflings-regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/WW.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/14.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/15.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/16.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/17.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/18.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/19.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/20.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/24.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/52.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/POS5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/banner.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/banner/coffee.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/bg-img/bg1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/bg-img/bg12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/bg-img/bg2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/bg-img/bg3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/bg-img/bg5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/bg-img/bg7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/bg-img/candidates.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/bg-img/elect.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/bg-img/youtube-bg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/blog/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/blog/10.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/blog/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/blog/23.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/blog/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/blog/30.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/blog/31.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/blog/32.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/blog/37.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/blog/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/blog/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/blog/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/blog/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/blog/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/blog/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/chosen-sprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/1n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/2n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/3n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/4n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/5n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/6n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/7n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/8n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/9n.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/L1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/L2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/L3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/L4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/LEE1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/LEE2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/LEE3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/S1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/S2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/S3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/S4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/SIM1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/SIM2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/SN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/Y1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/Y2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/Y3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/Y4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/YUN1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/YUN2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/YUN3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/event/YUN4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/gallery/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/gallery/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/gallery/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/gallery/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/gallery/5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/gallery/6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/icon-img/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/icon-img/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/icon-img/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/icon-img/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/icon-img/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/icon-img/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/icon/accordion-down.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/icon/accordion-up.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/icon/select-arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/logo/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/logo/logo2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/logo/whovologo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/map-marker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/marker.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/slider/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/slider/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/slider/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/slider/4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/slider/Sim.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/slider/Yun.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/slider/leeJM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/time-line/0309.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/time-line/1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/time-line/1st.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/time-line/2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/time-line/2nd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/time-line/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/time-line/3rd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/time-line/early.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/time-line/regis.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/venobox/close.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/venobox/next.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/venobox/preload-circle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/venobox/preload-dots.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/venobox/preload-ios.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/venobox/preload-quads.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/venobox/preload.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/venobox/prev.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/img/www.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/intent.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/js/active-calendar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/js/ajax-mail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/js/bar_chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/js/pie-chart.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/js/plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/js/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/js/vendor/jquery-v2.2.4.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/js/vendor/modernizr-3.11.7.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/js/wow.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/lib/css/nivo-slider.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/lib/css/preview.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/lib/home.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/lib/img/arrows-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/lib/img/arrows.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/lib/img/bullets-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/lib/img/bullets.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/lib/img/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/lib/img/loading.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/lib/js/jquery.nivo.slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/mail.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/templates/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/wsgi.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,27 +411,29 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="28pHOQ1Xg50t6cyqnhSHkYJD41h" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ChatWeb/static/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/project_no2/MainWeb/static" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jyj52\PycharmProjects\Project_No2\ChatWeb\static\img" />
-      <recent name="C:\Users\jyj52\PycharmProjects\Project_No2\ChatWeb\MainWeb\static\img" />
+      <recent name="$PROJECT_DIR$/project_no2/MainWeb/static" />
+      <recent name="$PROJECT_DIR$/ChatWeb/static" />
+      <recent name="$PROJECT_DIR$/ChatWeb/static/img/banner" />
       <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/static" />
       <recent name="$PROJECT_DIR$/ChatWeb/static/img" />
-      <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/static" />
@@ -73,7 +441,7 @@
       <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in views.py">
+  <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="Project_No2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -96,45 +464,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Project_No2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ChatWeb/ChatWeb" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ChatWeb/ChatWeb/views.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests in views.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="Project_No2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ChatWeb/MainWeb" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/ChatWeb/MainWeb/views.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python tests.Python tests in views.py" />
-        <item itemvalue="Python.views" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -147,8 +476,16 @@
       <workItem from="1651906578839" duration="21000" />
       <workItem from="1651906985744" duration="833000" />
       <workItem from="1652055013222" duration="18135000" />
-      <workItem from="1652157059120" duration="3709000" />
+      <workItem from="1652157059120" duration="14146000" />
     </task>
+    <task id="LOCAL-00001" summary="delete">
+      <created>1652228173032</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652228173032</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -164,5 +501,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete" />
   </component>
 </project>
