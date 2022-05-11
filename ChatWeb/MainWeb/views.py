@@ -9,6 +9,48 @@ import colorama
 from colorama import Fore, Style, Back
 import random
 import pickle
+import tensorflow as tf
+import numpy as np
+import pandas as pd
+import os
+import re
+import urllib.request
+import time
+import json
+from tensorflow import keras
+
+from tensorflow.keras.models import Sequential, clone_model, Model, load_model
+from tensorflow.keras.layers import Dense, Activation,InputLayer, Flatten, Input, BatchNormalization,Dropout,Embedding  # Dense란 하나의 뉴럴 층
+from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
+
+
+# CNN
+from tensorflow.keras.layers import Conv2D,MaxPooling2D,AveragePooling2D, GlobalAveragePooling1D
+
+# RNN
+from tensorflow.keras.layers import SimpleRNN, LSTM
+
+from tensorflow.keras.datasets import boston_housing, mnist, fashion_mnist, reuters
+from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, Callback
+from tensorflow.keras import optimizers
+from tensorflow.keras.optimizers import SGD,Adam,RMSprop
+from keras.utils.np_utils import to_categorical
+
+# 이미지 로드
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+# 자연어 처리
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+
+
+from sklearn.datasets import load_iris, load_breast_cancer, load_digits
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score
+from sklearn.preprocessing import LabelEncoder
+
+import matplotlib.pyplot as plt
 
 
 
