@@ -1,6 +1,5 @@
 {% load static %}
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -43,28 +42,26 @@
             document.getElementById("chatbox").innerHTML += bottext;
 
             var moi = document.getElementById("chatbox");
-            moi.scrollTop = moi.scrollHeight;
+            moi.scrollTop = document.getElementById("chatbox").scrollHeight;
 
-            document.getElementById("chattext").value = "";
-            document.getElementById("chattext").focus();
-
-            var strurl = "chatanswer?ctext=" + ctext;
+            var strurl = "../chatanswer?ctext=" + ctext;
             alert(strurl);
             // return false;
 
-            xhr = new XHMHttpRequest();
+            xhr = new XMLHttpRequest();
+
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4) {
                     var data = xhr.responseText;
 
-                    var odj = JSON.parse(data);
+                    var obj = JSON.parse(data);
                     alert(obj.answer);
 
                 }
             }
             xhr.open("GET", strurl);
             xhr.setRequestHeader("X-CSRFToken", csrftoken);
-            xht.send(null);
+            xhr.send(null);
 
 
         };
