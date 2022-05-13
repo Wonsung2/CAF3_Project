@@ -1,5 +1,6 @@
 {% load static %}
 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -33,7 +34,7 @@
                 return false;
 
             }
-            $('#text').val('')
+            // $('#text').val('')
 
             addtext = "<div style='margin: 14px 0; text-align: right;'><span style='background-color: white; padding: 5px 8px; border-radius: 3px'>" + ctext + "</span></div>"
             document.getElementById("chatbox").innerHTML += addtext;
@@ -41,27 +42,28 @@
             bottext = "<div style='margin: 14px 0; text-align: left;'><span style='background-color: white; padding: 5px 8px; border-radius: 3px'>저는 커피봇입니다 </span></div>"
             document.getElementById("chatbox").innerHTML += bottext;
 
-            var moi = document.getElementById("chatbox");
-            moi.scrollTop = document.getElementById("chatbox").scrollHeight;
+            document.getElementById("chatbox").scrollTop = document.getElementById("chatbox").scrollHeight;
 
-            var strurl = "../chatanswer?ctext=" + ctext;
+            document.getElementById("chattext").value = "";
+            document.getElementById("chattext").focus();
+
+            var strurl = "chatanswer?ctext=" + ctext;
             alert(strurl);
             // return false;
 
-            xhr = new XMLHttpRequest();
-
+            xhr = new XHMHttpRequest();
             xhr.onreadystatechange = function () {
                 if (xhr.readyState == 4) {
                     var data = xhr.responseText;
 
-                    var obj = JSON.parse(data);
+                    var odj = JSON.parse(data);
                     alert(obj.answer);
 
                 }
             }
             xhr.open("GET", strurl);
             xhr.setRequestHeader("X-CSRFToken", csrftoken);
-            xhr.send(null);
+            xht.send(null);
 
 
         };

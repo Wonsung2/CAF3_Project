@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="cca95ef5-bd91-4285-aff4-095d8abb9d14" name="Changes" comment="1">
+    <list default="true" id="cca95ef5-bd91-4285-aff4-095d8abb9d14" name="Changes" comment="fixed static file">
+      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/In.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/views.py" afterDir="false" />
     </list>
@@ -57,11 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jyj52\PycharmProjects\Project_No2\ChatWeb\MainWeb\static" />
-      <recent name="C:\Users\jyj52\PycharmProjects\Project_No2\ChatWeb\MainWeb\static\img" />
+      <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/static" />
+      <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main" />
+      <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/static/img" />
       <recent name="$PROJECT_DIR$/project_no2/MainWeb/static" />
       <recent name="$PROJECT_DIR$/ChatWeb/static" />
-      <recent name="$PROJECT_DIR$/ChatWeb/static/img/banner" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/static" />
@@ -92,30 +90,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="views" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="Project_No2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ChatWeb/MainWeb" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ChatWeb/MainWeb/views.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.views" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -128,7 +102,12 @@
       <workItem from="1651906578839" duration="21000" />
       <workItem from="1651906985744" duration="833000" />
       <workItem from="1652055013222" duration="18135000" />
-      <workItem from="1652157059120" duration="14146000" />
+      <workItem from="1652157059120" duration="29091000" />
+      <workItem from="1652286338920" duration="11000" />
+      <workItem from="1652314021892" duration="16605000" />
+      <workItem from="1652361692293" duration="1683000" />
+      <workItem from="1652367026567" duration="96000" />
+      <workItem from="1652400002523" duration="12130000" />
     </task>
     <task id="LOCAL-00001" summary="delete">
       <created>1652228173032</created>
@@ -137,7 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652228173032</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed static file">
+      <created>1652245843311</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652245843311</updated>
+    </task>
+    <task id="LOCAL-00003" summary="fixed static file">
+      <created>1652423828327</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652423828327</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +149,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete" />
+    <MESSAGE value="fixed static file" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed static file" />
   </component>
 </project>
