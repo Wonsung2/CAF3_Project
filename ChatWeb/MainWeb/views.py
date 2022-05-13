@@ -34,7 +34,7 @@ from tensorflow.keras.datasets import boston_housing, mnist, fashion_mnist, reut
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, Callback
 from tensorflow.keras import optimizers
 from tensorflow.keras.optimizers import SGD,Adam,RMSprop
-from keras.utils.np_utils import to_categorical
+
 
 # 이미지 로드
 from tensorflow.keras.preprocessing import image
@@ -50,7 +50,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import LabelEncoder
 
-import matplotlib.pyplot as plt
 
 
 
