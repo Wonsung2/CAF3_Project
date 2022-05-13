@@ -5,13 +5,13 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Chat bot</title>
+        <title>Polite || Blog</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- favicon
 		============================================ -->		
-        <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/www.ico' %}">
-
+        <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/favicon.ico' %}">
+	   
 		<!-- Bootstrap CSS
 		============================================ -->		
         <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
@@ -27,8 +27,8 @@
         <link rel="stylesheet" href="{% static 'css/owl.transitions.css' %}">
 		<!-- nivo slider CSS
 		============================================ -->
-		<link rel="stylesheet" href="{% static 'lib/css/nivo-slider.css' type='text/css' %}" />
-		<link rel="stylesheet" href="{% static 'lib/css/preview.css' type='text/css' media='screen' %}" />
+		<link rel="stylesheet" href="{% static 'lib/css/nivo-slider.css' %}" type="text/css" />
+		<link rel="stylesheet" href="{% static 'lib/css/preview.css' %}" type="text/css" media="screen" />
 		<!-- chosen CSS
 		============================================ -->
         <link rel="stylesheet" href="{% static 'css/chosen.min.css' %}">
@@ -58,13 +58,13 @@
 		============================================ -->		
         <script src="{% static 'js/vendor/modernizr-3.11.7.min.js' %}"></script>
     </head>
-    <body>
+    <body style="height: 100%; background-color: #993300; width: 100%">
         <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <!-- Add your site or application content here -->
         <div class="wrapper">
-            <div class="comming-soon-area bg-img height-100vh-2 d-flex align-items-center overlay" style="background-image: url('img/banner/banner.jpg');">
+            <div class="comming-soon-area bg-img height-100vh-2 d-flex align-items-center overlay" style="background-position: 10% 100px;">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-10 col-lg-offset-1 col-md-12">
@@ -75,23 +75,22 @@
                                             <img src="{% static 'img/logo/logo2.png' %}" alt="">
                                         </a>
                                     </div>
-                                    <h3>We are coming verry soon...</h3>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text</p>
+                                    <h3>Looking for your favorite coffee bean</h3>
                                 </div>
+                                <div id="chatbox" style="height: 450px; width: 110%; margin-top: 50px; background-color: saddlebrown; border-radius: 20%">
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-8 col-md-8 col-sm-10 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
                             <div class="subscribe-area-2 mt-110 text-center">
-                                <h4>Subscribe for our next update</h4>
                                 <div id="mc_embed_signup" class="subscribe-form-2">
                                     <form action="https://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                                         <div id="mc_embed_signup_scroll" class="mc-form">
-                                            <input type="email" value="" name="EMAIL" class="email" placeholder="Enter your e-mial" required>
+                                            <input type="email" value="" name="EMAIL" class="email" placeholder="내용을 입력 해주세요." required>
                                             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                                             <div class="mc-news" aria-hidden="true"><input type="text" name="b_6bbb9b6f5827bd842d9640c82_05d85f18ef" tabindex="-1" value=""></div>
-                                            <div class="clear-2"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                                            <div class="clear-2"><input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
                                         </div>
                                     </form>
                                 </div>
@@ -129,5 +128,7 @@
 		<!-- main JS
 		============================================ -->		
         <script src="{% static 'js/main.js' %}"></script>
+
+        </div>
     </body>
 </html>
