@@ -284,8 +284,8 @@
 
 			document.getElementById("chatbox").scrollTop = document.getElementById("chatbox").scrollHeight;
 
-			var strurl = "chatanswer";
-				alert(strurl);
+			var strurl = "chatanswer?chattext="+ chattext;
+				//alert(strurl);
 				// return false;
 
 				xhr = new XMLHttpRequest();
@@ -294,7 +294,13 @@
 						var data = xhr.responseText;
 
 						var obj = JSON.parse(data);
-						alert(obj.result);
+						//alert(obj.anstext);
+
+						bottext = "<div style='margin-top: auto; margin-bottom: auto; text-align: left; margin-left: 10px;'><span style='background-color:rgb(220,202,181); border-radius: 25px; padding: 10px; position: relative;'>"+obj.anstext+"</span></div>"
+						document.getElementById("chatbox").innerHTML += bottext;
+
+						document.getElementById("chatbox").scrollTop = document.getElementById("chatbox").scrollHeight;
+
 						}
 
 					};

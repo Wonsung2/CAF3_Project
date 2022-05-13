@@ -87,6 +87,11 @@ from sklearn.preprocessing import LabelEncoder
 
 from konlpy.tag import Okt
 
+import colorama
+colorama.init()
+from colorama import Fore, Style, Back
+import random
+
 
 # import matplotlib.pyplot as plt
 
@@ -213,3 +218,39 @@ def chattrain(request):
 
         context["result"] = 'Success......'
         return JsonResponse(context, content_type= "application/json")
+
+
+def chatanswer(request):
+    context= {}
+    context["result"] = 'Success......'
+
+    inp = request.GET['chattext']
+
+    with open('./static/In.json') as file:
+        data = json.load(file)
+
+    model = load_model('static/coffee_chat')
+
+    with open('static/tokenizer.pickle', 'rb') as handle:
+            tokenizer = pickle.load(handle)
+
+    with open('static/label_encoder.pickle', 'rb') as enc:
+        lbl_encoder = pickle.load(enc)
+        max_len = 15
+        result = model.predict(pad_sequences(tokenizer.texts_to_sequences([inp]),
+                                             truncating='post',
+                                             maxlen=max_len))
+        tag = lbl_encoder.inverse_transform([np.argmax(result)])
+
+        for i in data['intents']:
+            if i['tag'] == tag:
+                txt1 = np.random.choice(i['responses'])
+
+                print(Fore.GREEN + "ChatBot" + Style.RESET_ALL, txt1)
+
+    context['anstext'] = txt1
+    return JsonResponse(context, content_type="application/json")
+
+
+
+
