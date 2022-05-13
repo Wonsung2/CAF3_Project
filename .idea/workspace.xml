@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cca95ef5-bd91-4285-aff4-095d8abb9d14" name="Changes" comment="fixed static file">
-      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/css/filename.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/1000.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/1500.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/1900.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/llogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/logoo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/img/our_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/example.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/original.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/protect.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/In.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/ChatWeb/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/ChatWeb/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/ChatWeb/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/ChatWeb/templates/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/ChatWeb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/ChatWeb/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,14 +50,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ChatWeb/MainWeb/static" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/static" />
       <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main" />
       <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/static/img" />
-      <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/static" />
       <recent name="$PROJECT_DIR$/project_no2/MainWeb/static" />
       <recent name="$PROJECT_DIR$/ChatWeb/static" />
     </key>
@@ -123,7 +107,7 @@
       <workItem from="1652314021892" duration="16605000" />
       <workItem from="1652361692293" duration="1683000" />
       <workItem from="1652367026567" duration="96000" />
-      <workItem from="1652400002523" duration="9610000" />
+      <workItem from="1652400002523" duration="12130000" />
     </task>
     <task id="LOCAL-00001" summary="delete">
       <created>1652228173032</created>
@@ -139,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652245843311</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fixed static file">
+      <created>1652423828327</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652423828327</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

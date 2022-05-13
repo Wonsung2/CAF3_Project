@@ -28,7 +28,7 @@ from tensorflow.keras.datasets import boston_housing, mnist, fashion_mnist, reut
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, Callback
 from tensorflow.keras import optimizers
 from tensorflow.keras.optimizers import SGD,Adam,RMSprop
-from tensorflow.keras.utils.np_utils import to_categorical  # onehotencoding해주는 거
+from tensorflow.keras.utils import to_categorical  # onehotencoding해주는 거
 
 # 이미지 로드
 from tensorflow.keras.preprocessing import image
@@ -79,7 +79,7 @@ def chattrain(request):
     okt = Okt()
     mecab = Mecab()
 
-    with open('/content/intent_2.json') as file:
+    with open('./static/In.json') as file:
         data = json.load(file)
 
         data_frm = pd.DataFrame(data['intents'])
@@ -155,11 +155,11 @@ def chattrain(request):
 
         history = nlp_model.fit(padded_sequences, n_labels, batch_size=50, epochs=500, verbose=1, callbacks=[callbacks])
 
-        nlp_model.save("chat_model")
+        nlp_model.save("static/chat_model")
 
-        with open('tokenizer.pickle', 'wb') as handle:
+        with open('static/tokenizer.pickle', 'wb') as handle:
             pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
-        with open('label_encoder.pickle', 'wb') as ecn_file:
+        with open('static/label_encoder.pickle', 'wb') as ecn_file:
             pickle.dump(lbl_encoder, ecn_file, protocol=pickle.HIGHEST_PROTOCOL)
 
         context["result"] = 'Success......'
