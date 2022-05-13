@@ -85,7 +85,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import LabelEncoder
 
-from konlpy.tag import Okt, Mecab
+from konlpy.tag import Okt
 
 
 # import matplotlib.pyplot as plt
@@ -118,9 +118,9 @@ def chattrain(request):
     context = {}
 
     okt = Okt()
-    mecab = Mecab()
+   # mecab = Mecab()
 
-    with open('./static/In.json') as file:
+    with open('./static/In.json', encoding='utf-8') as file:
         data = json.load(file)
 
         data_frm = pd.DataFrame(data['intents'])
@@ -193,6 +193,14 @@ def chattrain(request):
         nlp_model.compile(optimizer=Adam(lr=0.0014), loss='categorical_crossentropy', metrics=['accuracy'])
 
         nlp_model.summary()
+
+        class MyCallBack(Callback):
+            def on_epoch_end(self, epoch, logs={}):
+                if logs.get('accuracy') >= 0.89:
+                    print('\n====Reached 89% accuracy, stop training====')
+                    self.model.stop_training = True
+
+        callbacks = MyCallBack()
 
         history = nlp_model.fit(padded_sequences, n_labels, batch_size=50, epochs=500, verbose=1, callbacks=[callbacks])
 
