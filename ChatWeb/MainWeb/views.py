@@ -260,5 +260,8 @@ def getLocate(request):
     acc = request.POST['acc']
     print(lat, lon, acc)
 
-    context['success'] = 'success'
+    context['success'] = 'get success'
+    context['lat'] = lat
+    context['lon'] = lon
+    context['acc'] = acc
     return JsonResponse(context, content_type='application/json')
