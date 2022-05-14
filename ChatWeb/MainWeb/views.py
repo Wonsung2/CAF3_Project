@@ -226,7 +226,7 @@ def chatanswer(request):
 
     inp = request.GET['chattext']
 
-    with open('./static/In.json') as file:
+    with open('./static/In.json', encoding='utf-8') as file:
         data = json.load(file)
 
     model = load_model('static/coffee_chat')
