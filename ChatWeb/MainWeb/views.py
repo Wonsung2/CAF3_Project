@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse,HttpResponse
 from django.views.decorators.csrf import csrf_exempt
-import tensorflow as tf
+# import tensorflow as tf
 import numpy as np
 import pandas as pd
 import os
@@ -9,14 +9,14 @@ import re
 import urllib.request
 import time
 import json
-# import tensorflow_datasets as tfds
-import tensorflow as tf
-from tensorflow.keras.models import Sequential, clone_model, Model, load_model
-from tensorflow.keras.layers import Dense, Activation,InputLayer, Flatten, Input, BatchNormalization,Dropout,Embedding  # Dense란 하나의 뉴럴 층
-from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
+# # import tensorflow_datasets as tfds
+# import tensorflow as tf
+# from tensorflow.keras.models import Sequential, clone_model, Model, load_model
+# from tensorflow.keras.layers import Dense, Activation,InputLayer, Flatten, Input, BatchNormalization,Dropout,Embedding  # Dense란 하나의 뉴럴 층
+# from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
 
 import pickle
-import tensorflow as tf
+# import tensorflow as tf
 import numpy as np
 import pandas as pd
 import os
@@ -24,32 +24,32 @@ import re
 import urllib.request
 import time
 import json
-from tensorflow import keras
+# from tensorflow import keras
 
-from tensorflow.keras.models import Sequential, clone_model, Model, load_model
-from tensorflow.keras.layers import Dense, Activation,InputLayer, Flatten, Input, BatchNormalization,Dropout,Embedding  # Dense란 하나의 뉴럴 층
-from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
+# from tensorflow.keras.models import Sequential, clone_model, Model, load_model
+# from tensorflow.keras.layers import Dense, Activation,InputLayer, Flatten, Input, BatchNormalization,Dropout,Embedding  # Dense란 하나의 뉴럴 층
+# from tensorflow.keras.wrappers.scikit_learn import KerasClassifier
 
 
 # CNN
-from tensorflow.keras.layers import Conv2D,MaxPooling2D,AveragePooling2D, GlobalAveragePooling1D
+# from tensorflow.keras.layers import Conv2D,MaxPooling2D,AveragePooling2D, GlobalAveragePooling1D
 
 # RNN
-from tensorflow.keras.layers import SimpleRNN, LSTM
+# from tensorflow.keras.layers import SimpleRNN, LSTM
 
-from tensorflow.keras.datasets import boston_housing, mnist, fashion_mnist, reuters
-from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, Callback
-from tensorflow.keras import optimizers
-from tensorflow.keras.optimizers import SGD,Adam,RMSprop
+# from tensorflow.keras.datasets import boston_housing, mnist, fashion_mnist, reuters
+# from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, Callback
+# from tensorflow.keras import optimizers
+# from tensorflow.keras.optimizers import SGD,Adam,RMSprop
 
 
 # 이미지 로드
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.preprocessing.image import ImageDataGenerator
+# from tensorflow.keras.preprocessing import image
+# from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
 # 자연어 처리
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+# from tensorflow.keras.preprocessing.text import Tokenizer
+# from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
 from sklearn.datasets import load_iris, load_breast_cancer, load_digits
@@ -60,24 +60,24 @@ from sklearn.preprocessing import LabelEncoder
 
 
 # CNN
-from tensorflow.keras.layers import Conv2D,MaxPooling2D,AveragePooling2D, GlobalAveragePooling1D
+# from tensorflow.keras.layers import Conv2D,MaxPooling2D,AveragePooling2D, GlobalAveragePooling1D
 
 # RNN
-from tensorflow.keras.layers import SimpleRNN, LSTM
+# from tensorflow.keras.layers import SimpleRNN, LSTM
 
-from tensorflow.keras.datasets import boston_housing, mnist, fashion_mnist, reuters
-from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, Callback
-from tensorflow.keras import optimizers
-from tensorflow.keras.optimizers import SGD,Adam,RMSprop
-from tensorflow.keras.utils import to_categorical  # onehotencoding해주는 거
+# from tensorflow.keras.datasets import boston_housing, mnist, fashion_mnist, reuters
+# from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint, Callback
+# from tensorflow.keras import optimizers
+# from tensorflow.keras.optimizers import SGD,Adam,RMSprop
+# from tensorflow.keras.utils import to_categorical  # onehotencoding해주는 거
 
 # 이미지 로드
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.preprocessing.image import ImageDataGenerator  # image에 대한 전체적인 전처리를 진행시켜준다.
+# from tensorflow.keras.preprocessing import image
+# from tensorflow.keras.preprocessing.image import ImageDataGenerator  # image에 대한 전체적인 전처리를 진행시켜준다.
 
 # 자연어 처리
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+# from tensorflow.keras.preprocessing.text import Tokenizer
+# from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 
 from sklearn.datasets import load_iris, load_breast_cancer, load_digits
@@ -85,7 +85,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import LabelEncoder
 
-from konlpy.tag import Okt
+# from konlpy.tag import Okt
 
 import colorama
 colorama.init()
@@ -252,5 +252,13 @@ def chatanswer(request):
     return JsonResponse(context, content_type="application/json")
 
 
+def getLocate(request):
+    context ={}
+    print('✅ get Locate 🚀')
+    lat = request.POST['lat']
+    lon = request.POST['lon']
+    acc = request.POST['acc']
+    print(lat, lon, acc)
 
-
+    context['success'] = 'success'
+    return JsonResponse(context, content_type='application/json')
