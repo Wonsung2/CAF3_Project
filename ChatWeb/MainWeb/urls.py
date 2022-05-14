@@ -10,5 +10,5 @@ urlpatterns = [
     path('chatanswer', views.chatanswer, name='chatanswer'),
     path('example', views.example, name='example'),
     path('example2', views.example2, name='example2'),
-
+    path('getLocate',views.getLocate, name='getLocate')
 ]
