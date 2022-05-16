@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cca95ef5-bd91-4285-aff4-095d8abb9d14" name="Changes" comment="dasdsda">
+    <list default="true" id="cca95ef5-bd91-4285-aff4-095d8abb9d14" name="Changes" comment="check plz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/example.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/example.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,12 +133,12 @@
       <option name="project" value="LOCAL" />
       <updated>1652423828327</updated>
     </task>
-    <task id="LOCAL-00004" summary="dasdsda">
-      <created>1652428240653</created>
+    <task id="LOCAL-00004" summary="check plz">
+      <created>1652430526273</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1652428240653</updated>
+      <updated>1652430526273</updated>
     </task>
     <option name="localTasksCounter" value="5" />
     <servers />
@@ -159,7 +160,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="delete" />
     <MESSAGE value="fixed static file" />
-    <MESSAGE value="dasdsda" />
-    <option name="LAST_COMMIT_MESSAGE" value="dasdsda" />
+    <MESSAGE value="check plz" />
+    <option name="LAST_COMMIT_MESSAGE" value="check plz" />
   </component>
 </project>
