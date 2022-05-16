@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="cca95ef5-bd91-4285-aff4-095d8abb9d14" name="Changes" comment="check plz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/In.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/In.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/example.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/example.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/In.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/static/In.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/chat_model/saved_model.pb" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/static/chat_model/saved_model.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/chat_model/variables/variables.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/static/chat_model/variables/variables.data-00000-of-00001" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/chat_model/variables/variables.index" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/static/chat_model/variables/variables.index" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/label_encoder.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/static/label_encoder.pickle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/static/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/static/tokenizer.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/static/tokenizer.pickle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +66,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jyj52\PycharmProjects\Project_No2\ChatWeb\MainWeb\static" />
       <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/static" />
       <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main" />
       <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/static/img" />
       <recent name="$PROJECT_DIR$/project_no2/MainWeb/static" />
-      <recent name="$PROJECT_DIR$/ChatWeb/static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ChatWeb/MainWeb/static" />

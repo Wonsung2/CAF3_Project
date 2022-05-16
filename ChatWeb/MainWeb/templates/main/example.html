@@ -1,5 +1,4 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html>
 	<head>
@@ -14,7 +13,7 @@
 		<link rel="stylesheet" type="text/css" href="https:cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 		<script type="text/javascript" src="https:cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.js"></script>
 		<script src="https:ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkyk-_GWFM9gmEC_u-EU_ipy0ckQVAFrk&callback=initMap" async defer></script>
 		<style>
 			body,html{
 				height: 100%;
@@ -151,6 +150,10 @@
 				font-size: 20px;
 				color: white;
 			}
+			.button_d{
+				font-size : 20px;
+				color : white;
+			}
 			.user_info p{
 			font-size: 10px;
 			color: rgba(255,255,255,0.6);
@@ -283,8 +286,8 @@
 			document.getElementById("chatbox").innerHTML += addtext;
 
 			var strurl = "chatanswer?chattext="+ chattext;
-				alert(strurl);
-				 return false;
+				//alert(strurl);
+				 //return false;
 
 				xhr = new XMLHttpRequest();
 				xhr.onreadystatechange = function () {
@@ -292,11 +295,15 @@
 						var data = xhr.responseText;
 
 						var obj = JSON.parse(data);
-						alert(obj.anstext);
 
+						if (obj.tag){
+							bottext = "<div style='margin-top: auto; margin-bottom: auto; text-align: left; margin-left: 10px;'><span style='background-color:rgb(220,202,181); border-radius: 25px; padding: 10px; position: relative;'>"+obj.anstext+"</span><br><button onclick='javascript:show_map()'>button</button></br></div>"
+							document.getElementById("chatbox").innerHTML += bottext;
+						}
+						else {
 						bottext = "<div style='margin-top: auto; margin-bottom: auto; text-align: left; margin-left: 10px;'><span style='background-color:rgb(220,202,181); border-radius: 25px; padding: 10px; position: relative;'>"+obj.anstext+"</span></div>"
 						document.getElementById("chatbox").innerHTML += bottext;
-
+						}
 						document.getElementById("chatbox").scrollTop = document.getElementById("chatbox").scrollHeight;
 
 						}
@@ -309,10 +316,10 @@
             }
 
 			function chatTrain() {
-				 alert('Training.....');
+				 //alert('Training.....');
 				var strurl = "chattrain";
-				 alert(strurl);
-				 return false;
+				// alert(strurl);
+				 //return false;
 
 				xhr = new XMLHttpRequest();
 				xhr.onreadystatechange = function () {
@@ -320,7 +327,7 @@
 						var data = xhr.responseText;
 
 						var obj = JSON.parse(data);
-						alert(obj.result);
+						//alert(obj.result);
 						}
 
 					};
@@ -332,50 +339,10 @@
 
 
         </script>
-	</head>
-	<!--Coded With Love By Mutiullah Samim-->
-	<body>
-		<div class="container-fluid h-100">
-			<div class="row justify-content-center h-100">
-				<div class="col-md-8 col-xl-6 chat">
-					<div class="card">
-						<div class="card-header msg_head">
-							<div class="d-flex bd-highlight">
-								<div class="img_cont">
-									<img src="{% static 'img/logoo.png' %}"class="rounded-circle user_img">
-									<span class="online_icon"></span>
-								</div>
-								<div class="user_info">
-									<span onclick="chatTrain()">CAF3</span>
-								</div>
-							</div>
-						</div>
-						<div class="card-body msg_card_body" id="chatbox">
-
-						</div>
-						<div class="card-footer">
-							<div class="input-group">
-								<div class="input-group-append">
-									<span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
-								</div>
-								<input type="text" name="chattext" class="form-control type_msg" placeholder="Type your message..."id="chattext" onkeydown="javascript:if(event.keyCode==13){sendchat();}">
-								<div class="input-group-append">
-									<span class="input-group-text send_btn" id = 'send' onclick="sendchat()"><i class="fas fa-location-arrow"></i></span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<button class="show_map">show marker</button>
-		<!-- 지도 타일 이미지들을 보여줄 영역 div요소 -->
-		<div id="map"></div>
-		<!-- Google 지도 api 사용 스크립트 추가 -->
-		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkyk-_GWFM9gmEC_u-EU_ipy0ckQVAFrk&callback=initMap" async defer></script>
 		<script type="text/javascript">
-			$('.show_map').click(function(){
+			function showMap(){
 				let toggle = $('#map')
+				alert('click')
 				if (toggle.css('display') == 'block'){
 					toggle.hide();
 				} else{
@@ -431,21 +398,22 @@
 							var img= 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
 
 							for(var i=0; i<franchise.length; i++){
-								var title = franchise[i][0];
-								var pos = new google.maps.LatLng(franchise[i][1],franchise[i][2]);
-
-								var m = new google.maps.Marker({
-									position : pos,
-									title : title,
-									icon : img,
-									map : map
-								})
-								m.addListener('click', function(){
-									var contentString = `<h3 style="margin:0; color:teal;">${this.getTitle()}</h3>`
-									var infowindow = new google.maps.InfoWindow();
-									infowindow.setContent(contentString);
-									infowindow.open(this.getMap(), this);
-								})
+								if (franchise[i][3] == obj.tag){
+									var title = franchise[i][0];
+									var pos = new google.maps.LatLng(franchise[i][1],franchise[i][2]);
+									var m = new google.maps.Marker({
+										position : pos,
+										title : title,
+										icon : img,
+										map : map
+									})
+									m.addListener('click', function(){
+										var contentString = `<h3 style="margin:0; color:teal;">${this.getTitle()}</h3>`
+										var infowindow = new google.maps.InfoWindow();
+										infowindow.setContent(contentString);
+										infowindow.open(this.getMap(), this);
+									})
+								}
 							}
 						}
 					})
@@ -455,8 +423,50 @@
 					console.warn(`ERROR(${err.code}): ${err.message}`);
 				}
 				navigator.geolocation.getCurrentPosition(success, error, options);
-			})
+			}
    		</script>
+	</head>
+	<!--Coded With Love By Mutiullah Samim-->
+	<body>
+		<div class="container-fluid h-100">
+			<div class="row justify-content-center h-100">
+				<div class="col-md-8 col-xl-6 chat">
+					<div class="card">
+						<div class="card-header msg_head">
+							<div class="d-flex bd-highlight">
+								<div class="img_cont">
+									<img src="{% static 'img/logoo.png' %}"class="rounded-circle user_img">
+									<span class="online_icon"></span>
+								</div>
+								<div class="user_info">
+									<span onclick="chatTrain()">CAF3</span>
+								</div>
+							</div>
+						</div>
+						<div class="card-body msg_card_body" id="chatbox">
+
+						</div>
+						<div class="card-footer">
+							<div class="input-group">
+								<div class="input-group-append">
+									<span class="input-group-text attach_btn"><i class="fas fa-paperclip"></i></span>
+								</div>
+								<input type="text" name="chattext" class="form-control type_msg" placeholder="Type your message..."id="chattext" onkeydown="javascript:if(event.keyCode==13){sendchat();}">
+								<div class="input-group-append">
+									<span class="input-group-text send_btn" id = 'send' onclick="sendchat()"><i class="fas fa-location-arrow"></i></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<button class="show_map">show marker</button>
+		<!-- 지도 타일 이미지들을 보여줄 영역 div요소 -->
+		<div id="map"></div>
+		<!-- Google 지도 api 사용 스크립트 추가 -->
+
+
 	</body>
 </html>
 
