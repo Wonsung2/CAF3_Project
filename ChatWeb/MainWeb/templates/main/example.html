@@ -297,7 +297,7 @@
 						var obj = JSON.parse(data);
 
 						if (obj.tag){
-							bottext = "<div style='margin-top: auto; margin-bottom: auto; text-align: left; margin-left: 10px;'><span style='background-color:rgb(220,202,181); border-radius: 25px; padding: 10px; position: relative;'>"+obj.anstext+"</span><br><button onclick='javascript:show_map()'>button</button></br></div>"
+							bottext = "<div style='margin-top: auto; margin-bottom: auto; text-align: left; margin-left: 10px;'><span style='background-color:rgb(220,202,181); border-radius: 25px; padding: 10px; position: relative;'>"+obj.anstext+"</span><br><button onclick='javascript:showMap()'>button</button></br></div>"
 							document.getElementById("chatbox").innerHTML += bottext;
 						}
 						else {
@@ -341,8 +341,8 @@
         </script>
 		<script type="text/javascript">
 			function showMap(){
-				let toggle = $('#map')
 				alert('click')
+				let toggle = $('#map')
 				if (toggle.css('display') == 'block'){
 					toggle.hide();
 				} else{
