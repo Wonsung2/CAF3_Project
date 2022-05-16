@@ -258,10 +258,16 @@ def getLocate(request):
     lat = request.POST['lat']
     lon = request.POST['lon']
     acc = request.POST['acc']
-    print(lat, lon, acc)
+    # print(lat, lon, acc)
+    data = pd.read_csv('./static/store.csv')
+    # print(type(data))
+
+    franchise = [[data['store'][i],data['lat'][i],data['lng'][i]]for i in range(len(data))]
+    # print(franchise)
 
     context['success'] = 'get success'
     context['lat'] = lat
     context['lon'] = lon
     context['acc'] = acc
+    context['franchise'] = franchise
     return JsonResponse(context, content_type='application/json')

@@ -425,6 +425,28 @@
 
 							// 지도 객체에 마커 추가하기
 							marker.setMap(map);
+
+							var franchise = response.franchise
+
+							var img= 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';
+
+							for(var i=0; i<franchise.length; i++){
+								var title = franchise[i][0];
+								var pos = new google.maps.LatLng(franchise[i][1],franchise[i][2]);
+
+								var m = new google.maps.Marker({
+									position : pos,
+									title : title,
+									icon : img,
+									map : map
+								})
+								m.addListener('click', function(){
+									var contentString = `<h3 style="margin:0; color:teal;">${this.getTitle()}</h3>`
+									var infowindow = new google.maps.InfoWindow();
+									infowindow.setContent(contentString);
+									infowindow.open(this.getMap(), this);
+								})
+							}
 						}
 					})
 				}
@@ -435,61 +457,6 @@
 				navigator.geolocation.getCurrentPosition(success, error, options);
 			})
    		</script>
-<!--		카페 위치 정보를 갖고오게 되면 사용하게 될 코드-->
-<!--		<script>-->
-<!--			function showMarker(){-->
-<!--				// 두번째 마커 추가.. 및 마커 이미지 변경-->
-<!--				var station= new google.maps.LatLng(37.561196, 127.038498); //왕십리역 좌표-->
-<!--	-->
-<!--				//마커 이미지의 경로-->
-<!--				var img= 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png';-->
-<!--	-->
-<!--				var marker2= new google.maps.Marker( {-->
-<!--					position: station,-->
-<!--					title:"왕십리역",-->
-<!--					icon: img,-->
-<!--					map: map //이렇게 마커를 만들면서 map객체에 추가시킬 수 있음. setMap()-->
-<!--				} );-->
-<!--	-->
-<!--				// 마커2 클릭시에 애니메이션 적용-->
-<!--				marker2.addListener('click', function(){-->
-<!--					// 마커가 바운스..(무한 반복)-->
-<!--					// marker2.setAnimation(google.maps.Animation.BOUNCE);-->
-<!--	-->
-<!--					if(marker2.getAnimation()==null){-->
-<!--						marker2.setAnimation(google.maps.Animation.BOUNCE);-->
-<!--					}else{-->
-<!--						marker2.setAnimation(null);-->
-<!--					}-->
-<!--				});-->
-<!--	-->
-<!--				// 마커가 보여질 때 애니메이션 처리도 가능함..(여러개 마커들에 동시에)-->
-<!--	-->
-<!--				// 왕십리역 약국들...구글지도에서 좌표값들 얻어왔음.-->
-<!--				 var pharmacys=[-->
-<!--						['희망약국', 37.562516, 127.035679],-->
-<!--						['이수프라자약국', 37.561155, 127.034560],-->
-<!--						['연세우리약국', 37.560710, 127.035978],-->
-<!--						['왕십리약국', 37.562162, 127.032171]-->
-<!--					];-->
-<!--	-->
-<!--				for(var i=0; i<pharmacys.length; i++){-->
-<!--					var title= pharmacys[i][0];-->
-<!--					var pos= new google.maps.LatLng(pharmacys[i][1], pharmacys[i][2]);-->
-<!--	-->
-<!--					var m= new google.maps.Marker({-->
-<!--						position: pos,-->
-<!--						title: title,-->
-<!--						icon: "./button-red.png",-->
-<!--						map: map,-->
-<!--						animation: google.maps.Animation.DROP,-->
-<!--					});-->
-<!--					m.addListener('click', function(){-->
-<!--						alert(this.getTitle());-->
-<!--					})-->
-<!--				}-->
-<!--			}-->
-<!--    	</script>-->
 	</body>
 </html>
 
