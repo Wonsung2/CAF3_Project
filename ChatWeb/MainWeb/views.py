@@ -262,18 +262,30 @@ def getLocate(request):
     lat = request.POST['lat']
     lon = request.POST['lon']
     acc = request.POST['acc']
-    # print(lat, lon, acc)
+    tag = request.POST['tag']
+    print(lat, lon, acc, tag)
+    lat = float(lat)
+    lon = float(lon)
     data = pd.read_csv('./static/store.csv')
     # print(type(data))
 
     franchise = [[data['store'][i],data['lat'][i],data['lng'][i],data['franchise'][i]]for i in range(len(data))]
-
+    target = data.loc[data['franchise'] == tag]
+    min_distance = np.min(abs(target['lng'] - lon) + abs(target['lat'] - lat))
+    min_store = target.loc[(abs(target['lng'] - lon) + abs(target['lat'] - lat)) == min_distance]
     # print(franchise)
+    print(min_store)
 
+    min_store_lst = []
+    min_store_lst.append(float(min_store['lat']))
+    min_store_lst.append(float(min_store['lng']))
+    min_store_lst.append(str(min_store['store']))
+    print(min_store_lst, type(min_store_lst[0]), type(min_store_lst[1]), type(min_store_lst[2]))
     context['success'] = 'get success'
     context['lat'] = lat
     context['lon'] = lon
     context['acc'] = acc
     context['franchise'] = franchise
+    context['min_store'] = min_store_lst
     return JsonResponse(context, content_type='application/json')
 
