@@ -126,96 +126,90 @@ def chattrain(request):
     with open('./static/In.json', encoding='utf-8') as file:
         data = json.load(file)
 
-        data_frm = pd.DataFrame(data['intents'])
-        data_frm.info()
-        intents = data['intents']
+    data_frm = pd.DataFrame(data['intents'])
+    data_frm.info()
+    intents = data['intents']
 
-        training_sentences = []  # 158
-        training_labels = []  # 158
-        labels = []
-        responses = []
+    training_sentences = []  # 158
+    training_labels = []  # 158
+    labels = []
+    responses = []
 
-        for li in intents:
-            for pattern in li['patterns']:
-                training_sentences.append(okt.morphs(pattern))  # stem=True 제외.
-                training_labels.append(li['tag'])
-            responses.append(li['responses'])
-            if li['tag'] not in labels:
-                labels.append(li['tag'])
-        num_classes = len(labels)
+    for li in intents:
+        for pattern in li['patterns']:
+            pattern = re.sub(r"([?.!,])", r" \1 ", pattern)
+            pattern = pattern.strip()
+            training_sentences.append(okt.morphs(pattern))  # stem=True 제외.
+            training_labels.append(li['tag'])
+        responses.append(li['responses'])
+        if li['tag'] not in labels:
+            labels.append(li['tag'])
+    num_classes = len(labels)
 
-        lbl_encoder = LabelEncoder()
-        lbl_encoder.fit(training_labels)
-        training_labels = lbl_encoder.transform(training_labels)
-        print(len(training_labels))
-        training_labels
+    lbl_encoder = LabelEncoder()
+    lbl_encoder.fit(training_labels)
+    training_labels = lbl_encoder.transform(training_labels)
+    print(len(training_labels))
 
-        vocab_size = 10000
-        embedding_dim = 50
-        max_len = max(len(i) for i in training_sentences)
-        oov_token = "<OOV>"
+    vocab_size = 10000
+    embedding_dim = 100
+    max_len = max(len(i) for i in training_sentences)
+    oov_token = "<OOV>"
 
-        tokenizer = Tokenizer(num_words=vocab_size, oov_token=oov_token)
-        tokenizer.fit_on_texts(training_sentences)
+    tokenizer = Tokenizer(num_words=vocab_size, oov_token=oov_token)
+    tokenizer.fit_on_texts(training_sentences)
 
-        word_index = tokenizer.word_index
+    sequences = tokenizer.texts_to_sequences(training_sentences)
+    padded_sequences = pad_sequences(sequences, padding='post', maxlen=max_len)
 
-        sequences = tokenizer.texts_to_sequences(training_sentences)
-        padded_sequences = pad_sequences(sequences, padding='post', maxlen=max_len)
+    n_labels = np.array(training_labels)
+    n_labels = to_categorical(n_labels)
 
-        n_labels = np.array(training_labels)
-        n_labels = to_categorical(n_labels)
+    nlp_model = Sequential()
 
-        nlp_model = Sequential()
+    # layer
+    nlp_model.add(Embedding(vocab_size, embedding_dim, input_length=max_len))
+    nlp_model.add(GlobalAveragePooling1D())
+    nlp_model.add(Dropout(0.2))
 
-        # layer
-        nlp_model.add(Embedding(vocab_size, embedding_dim, input_length=max_len))
-        nlp_model.add(GlobalAveragePooling1D())
-        nlp_model.add(Dropout(0.2))
+    nlp_model.add(Dense(256))
+    nlp_model.add(Activation('gelu'))
+    nlp_model.add(Dropout(0.2))
 
-        nlp_model.add(Dense(512))
-        nlp_model.add(Activation('relu'))
-        nlp_model.add(Dropout(0.2))
+    nlp_model.add(Dense(128))
+    nlp_model.add(Activation('gelu'))
+    nlp_model.add(Dropout(0.2))
 
-        nlp_model.add(Dense(256))
-        nlp_model.add(Activation('relu'))
-        nlp_model.add(Dropout(0.2))
+    nlp_model.add(Dense(64))
+    nlp_model.add(Activation('gelu'))
+    nlp_model.add(Dropout(0.2))
 
-        nlp_model.add(Dense(128))
-        nlp_model.add(Activation('relu'))
-        nlp_model.add(Dropout(0.2))
+    nlp_model.add(Dense(num_classes))
+    nlp_model.add(Activation('softmax'))
 
-        nlp_model.add(Dense(64))
-        nlp_model.add(Activation('relu'))
-        nlp_model.add(Dropout(0.2))
+    # compile
+    nlp_model.compile(optimizer=Adam(lr=0.001), loss='categorical_crossentropy', metrics=['accuracy'])
+    nlp_model.summary()
 
-        nlp_model.add(Dense(num_classes))
-        nlp_model.add(Activation('softmax'))
+    class MyCallBack(Callback):
+        def on_epoch_end(self, epoch, logs={}):
+            if logs.get('accuracy') >= 0.95:
+                print('\n====Reached 89% accuracy, stop training====')
+                self.model.stop_training = True
 
-        # compile
-        nlp_model.compile(optimizer=Adam(lr=0.0014), loss='categorical_crossentropy', metrics=['accuracy'])
+    callbacks = MyCallBack()
 
-        nlp_model.summary()
+    nlp_model.fit(padded_sequences, n_labels, batch_size=50, epochs=500, verbose=1, callbacks=[callbacks])
 
-        class MyCallBack(Callback):
-            def on_epoch_end(self, epoch, logs={}):
-                if logs.get('accuracy') >= 0.95:
-                    print('\n====Reached 89% accuracy, stop training====')
-                    self.model.stop_training = True
+    nlp_model.save("static/chat_model")
 
-        callbacks = MyCallBack()
+    with open('static/tokenizer.pickle', 'wb') as handle:
+        pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
+    with open('static/label_encoder.pickle', 'wb') as ecn_file:
+        pickle.dump(lbl_encoder, ecn_file, protocol=pickle.HIGHEST_PROTOCOL)
 
-        history = nlp_model.fit(padded_sequences, n_labels, batch_size=50, epochs=500, verbose=1, callbacks=[callbacks])
-
-        nlp_model.save("static/chat_model")
-
-        with open('static/tokenizer.pickle', 'wb') as handle:
-            pickle.dump(tokenizer, handle, protocol=pickle.HIGHEST_PROTOCOL)
-        with open('static/label_encoder.pickle', 'wb') as ecn_file:
-            pickle.dump(lbl_encoder, ecn_file, protocol=pickle.HIGHEST_PROTOCOL)
-
-        context["result"] = 'Success......'
-        return JsonResponse(context, content_type= "application/json")
+    context["result"] = 'Success......'
+    return JsonResponse(context, content_type= "application/json")
 
 
 def chatanswer(request):
@@ -234,23 +228,23 @@ def chatanswer(request):
 
     with open('static/label_encoder.pickle', 'rb') as enc:
         lbl_encoder = pickle.load(enc)
-        max_len = 28
-        result = model.predict(pad_sequences(tokenizer.texts_to_sequences([inp]),
-                                             truncating='post',
-                                             maxlen=max_len))
-        tag = lbl_encoder.inverse_transform([np.argmax(result)])
+    max_len = 28
+    result = model.predict(pad_sequences(tokenizer.texts_to_sequences([inp]),
+                                         truncating='post',
+                                         maxlen=max_len))
+    tag = lbl_encoder.inverse_transform([np.argmax(result)])
 
-        brand_lst = ['starbucks', 'twosomeplace', 'ediya', 'hollys', 'composecoffee', 'fromheartcoffee', 'gongcha', 'mmthcoffee',
-                     'cafevene', 'coffeebanhada', 'coffeebean', 'coffeenamu', 'palgongtea', 'angelinus', 'pascucci', 'yogurpresso',
-                     'topresso', 'baek', 'artisee', 'paulbassette', 'coffeebay', 'dalcom coffee', 'megacoffee', 'tomntoms']
-        brand = str(list(tag)[0])
-        if brand in brand_lst:
-            context['tag'] = brand
-        else :
-            pass
-        for i in data['intents']:
-            if i['tag'] == tag:
-                txt1 = np.random.choice(i['responses'])
+    brand_lst = ['starbucks', 'twosomeplace', 'ediya', 'hollys', 'composecoffee', 'fromheartcoffee', 'gongcha', 'mmthcoffee',
+                 'cafevene', 'coffeebanhada', 'coffeebean', 'coffeenamu', 'palgongtea', 'angelinus', 'pascucci', 'yogurpresso',
+                 'topresso', 'baek', 'artisee', 'paulbassette', 'coffeebay', 'dalcom coffee', 'megacoffee', 'tomntoms']
+    brand = str(list(tag)[0])
+    if brand in brand_lst:
+        context['tag'] = brand
+    else :
+        pass
+    for i in data['intents']:
+        if i['tag'] == tag:
+            txt1 = np.random.choice(i['responses'])
 
     context['anstext'] = txt1
     return JsonResponse(context, content_type="application/json")
