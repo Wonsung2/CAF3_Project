@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cca95ef5-bd91-4285-aff4-095d8abb9d14" name="Changes" comment="마무으리">
+    <list default="true" id="cca95ef5-bd91-4285-aff4-095d8abb9d14" name="Changes" comment="찐막">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/In.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/In.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/static/store.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/static/store.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/example.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/example.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/ChatWeb/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/ChatWeb/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/templates/main/original.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ChatWeb/MainWeb/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/MainWeb/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/static/In.json" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/static/In.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/static/chat_model/saved_model.pb" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/static/chat_model/saved_model.pb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/static/chat_model/variables/variables.data-00000-of-00001" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/static/chat_model/variables/variables.data-00000-of-00001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/static/chat_model/variables/variables.index" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/static/chat_model/variables/variables.index" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/static/label_encoder.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/static/label_encoder.pickle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/static/store.csv" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/static/store.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChatWeb/static/tokenizer.pickle" beforeDir="false" afterPath="$PROJECT_DIR$/ChatWeb/static/tokenizer.pickle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652765680035</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="찐막">
+      <created>1652848627110</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1652848627110</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +200,7 @@
     <MESSAGE value="check plz" />
     <MESSAGE value="dasdsda" />
     <MESSAGE value="마무으리" />
-    <option name="LAST_COMMIT_MESSAGE" value="마무으리" />
+    <MESSAGE value="찐막" />
+    <option name="LAST_COMMIT_MESSAGE" value="찐막" />
   </component>
 </project>
