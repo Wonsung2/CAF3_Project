@@ -5,6 +5,16 @@
 커피빈 챗봇(CAF3)
 
 프로젝트 기간: 2022.04.25 ~ 2022.05.19
+팀원 : 최재우, 박현상, 장성원
+
+- Tech stacks
+ - Python
+ - Pandas
+ - Beautifulsoup
+ - Django
+ - Tensorflow
+ 
+프로젝트 기획의도
 
 프로젝트 주제
  - 소비자들이 원하는 커피빈 찾아주기
