@@ -9,11 +9,12 @@
 팀원 : 최재우, 박현상, 장성원
 
 - Tech stacks
- - Python
- - Pandas
- - Beautifulsoup
- - Django
- - Tensorflow
+
+  - Python
+  - Pandas
+  - Beautifulsoup
+  - Django
+  - Tensorflow
  
 프로젝트 기획의도
  - 많은 소비자들이 너무나 많은 커피브랜드와 커피로 인해서 오는 선택의 과부하를 막기 위해서 
@@ -28,5 +29,7 @@
  - 소비자들의 커피 취향을 알 수 있게 만들것이다.
  
 기능구현 목표
- 1. 사용자 물어보는 질문에 대한 올바른 답
+ 1. 높은 정확성의 모델을 제작
+ 2. 채팅창에 확실한 지도 표시 
+ 3. 깔끔한 채팅화면 제작
  
